@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177549052350723&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177549320780326&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
@@ -677,7 +677,17 @@ document.addEventListener("DOMContentLoaded", async() => {
       }
     });
   }
-});</script>
+});</script><script><div>
+  <div>
+    <span>Text inside span</span>
+  </div>
+  <div>
+    <p>Paragraph inside div</p>
+  </div>
+  <div>
+    <strong>Bold text inside div</strong>
+  </div>
+</div></script>
 <script type="application/json" id="page-config">
 {
   "campaignId": "39",
