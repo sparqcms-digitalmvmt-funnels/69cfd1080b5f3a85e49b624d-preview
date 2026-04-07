@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556206970629&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556294490840&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
@@ -5583,12 +5583,10 @@ this.value = this.value.replace(/\D/g, '');
           if (digits !== cvvInput.value) cvvInput.value = digits;
         });
       });
-</script><script> <script>
-    $(document).ready(function() {
-      document.title = 'jQuery works';
-      console.log('jQuery loaded:', typeof $);
-    });
-  </script></script><script><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script></script>
+</script><script>window.addEventListener('load', function() {
+    console.log('jQuery loaded:', typeof $);
+    document.title = 'jQuery works';
+  });</script><script>document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>');</script>
 <script type="application/json" id="page-config">
 {
   "campaignId": "39",
