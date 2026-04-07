@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><base href="/69cfd1080b5f3a85e49b624d-preview/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content=""><title>checkout</title><link rel="icon" href="favicon.ico" type="image/x-icon"><script>
+<!DOCTYPE html><html lang="en"><head><base href="/69cfd1080b5f3a85e49b624d-preview/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content=""><title>checkout</title><link rel="icon" href="https://stdigitalmvmtstaging001.blob.core.windows.net/assets/develop/seo.png" type="image/png"><script>
 sessionStorage.setItem("test", true);
 
 const ALLOWED_AFFILIATE_IDS = ["1234","2345"];
@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556158714468&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556206970629&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
@@ -5583,7 +5583,12 @@ this.value = this.value.replace(/\D/g, '');
           if (digits !== cvvInput.value) cvvInput.value = digits;
         });
       });
-</script><script>console.log("Hello World!2")</script><script>console.log("Hello World!")</script>
+</script><script> <script>
+    $(document).ready(function() {
+      document.title = 'jQuery works';
+      console.log('jQuery loaded:', typeof $);
+    });
+  </script></script><script><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script></script>
 <script type="application/json" id="page-config">
 {
   "campaignId": "39",
