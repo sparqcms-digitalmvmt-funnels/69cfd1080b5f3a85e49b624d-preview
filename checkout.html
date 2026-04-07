@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177549393537867&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556150273677&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
@@ -5583,7 +5583,7 @@ this.value = this.value.replace(/\D/g, '');
           if (digits !== cvvInput.value) cvvInput.value = digits;
         });
       });
-</script>
+</script><script>console.log("Hello World!2")</script><script>console.log("Hello World!")</script>
 <script type="application/json" id="page-config">
 {
   "campaignId": "39",
