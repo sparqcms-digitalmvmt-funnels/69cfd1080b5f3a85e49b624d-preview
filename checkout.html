@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556454985392&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556563258365&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
@@ -5505,14 +5505,6 @@ if (shoudLoadExitPopup()) loadExitPopup();</script><script>document.querySelecto
           input.setAttribute("placeholder", "");
         }
       });
-</script><script>const link = document.createElement("link");
-link.relList.add("icon");
-link.relList.add("prefetch");
-link.href = "https://offer.buyvi-shift.com/offer/1/app/desktop/images/favicon.png";
-link.type = "image/png";
-
-document.head.appendChild(link);
-
 </script><script>document.addEventListener("DOMContentLoaded", () => {
         const paymentMethodHeaders = document.querySelectorAll(
           ".payment-method-header"
