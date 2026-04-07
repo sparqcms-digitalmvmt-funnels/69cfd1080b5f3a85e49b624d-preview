@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><base href="/69cfd1080b5f3a85e49b624d-preview/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content=""><title>checkout</title><link rel="icon" href="https://stdigitalmvmtstaging001.blob.core.windows.net/assets/develop/seo.png" type="image/png"><script>
 sessionStorage.setItem("test", true);
 
-const ALLOWED_AFFILIATE_IDS = ["1234","2345"];
+const ALLOWED_AFFILIATE_IDS = ["1223","1856"];
 
 let nextPageSlug = null;
 
@@ -78,7 +78,7 @@ if (localStorage.getItem('sK_r')) {
 const route = async () => {
   if (localStorage.getItem('sK_r')) return JSON.parse(localStorage.getItem('sK_r'));
   const sessionId = MVMT.getSessionId() || localStorage.getItem("mvmt_session_id") || "";
-  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556563258365&sessionId='+sessionId;
+  const url = 'https://func-ab-test-events-staging-001.azurewebsites.net/api/checkRoute?id=69cfd1080b5f3a85e49b624d&v=177556676263132&sessionId='+sessionId;
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error('Network response was not ok');
