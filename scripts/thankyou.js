@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const endpoint =
     `orders?order_id=${orderids.join(",")}` +
-    `&with=order_offers,customer_address_billing,customer_address_shipping,customer,transactions,cart&pageId=NAiKg_Dw6aJU8YGxNWzWZhLU0hD-jRkrK3BSvlvJg1B0fKi7czsJVaogW02q7Pyk`
+    `&with=order_offers,customer_address_billing,customer_address_shipping,customer,transactions,cart&pageId=CQK6NOi5TRWFXU2AUooGI3NYYLbymJc5LeOVCk0IwWWWD9RyW-DUQ73QhEpXBbsO`
 
   const response = await fetch(
     `https://app-cms-api-proxy-staging-001.azurewebsites.net/vrio/${endpoint}`,
